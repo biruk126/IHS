@@ -1,0 +1,9 @@
+{
+  "name": "IHS-AI Health",
+  "description": "An AI-powered healthcare assistant with voice support and a dedicated health store.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera"
+  ],
+  "majorCapabilities": []
+}

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+body {
+  @apply bg-[#0A0A0A] text-white antialiased;
+}
+
+/* Markdown Styling for Chat */
+.prose h1, .prose h2, .prose h3 {
+  @apply font-bold text-white mb-2 mt-1;
+}
+.prose h1 { @apply text-xl; }
+.prose h2 { @apply text-lg; }
+.prose h3 { @apply text-base; }
+.prose p {
+  @apply mb-3 last:mb-0 text-white/90 leading-relaxed;
+}
+.prose strong {
+  @apply font-bold text-white;
+}
+.prose ul, .prose ol {
+  @apply mb-3 ml-4 list-disc;
+}
+.prose li {
+  @apply mb-1;
+}
+
+
+
+
